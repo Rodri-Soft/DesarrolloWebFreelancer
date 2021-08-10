@@ -12,3 +12,5 @@ Lorem ipsum.- es.lipsum.com
 table icons
 
 cambios de notas
+
+echo "Practicando con GitKraKen"
