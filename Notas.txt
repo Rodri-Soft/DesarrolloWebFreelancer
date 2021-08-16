@@ -1,4 +1,6 @@
 SVG.- scalable vector graphic
+Tabler icons -- https://tablericons.com/
+
 Lorem ipsum.- es.lipsum.com
 
 <footer>
@@ -9,8 +11,26 @@ Lorem ipsum.- es.lipsum.com
 <aside>
 <div>
 
-table icons
+1rem - 10px
 
-cambios de notas
+Los #id no se pueden repetir mientras que las .clases si
 
-echo "Practicando con GitKraKen"
+Si son iguales los selectores tomará el ultimo estilo
+
+----Especificidad
+Es como el navegador va a mostrar el CSS de acuerdo a que tan especifico es el selector
+que hemos creado
+
+CSS es en cascada, eso no significa que si un selector aparece después será tomado
+en cuenta sino más bien su especificidad
+
+Entre más especifico sea un selector es más probable que se le aplique un estilo
+
+--Pseudoselectores
+Elementos que no existen como tal en el HTML
+
+-:root es una forma de almacenar, digamos, variables de CSS que se les conoce como 
+ Custom properties
+
+--Google Fonts
+https://fonts.google.com/
