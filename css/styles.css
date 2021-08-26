@@ -2,7 +2,7 @@
     --blanco: #ffffff;
     --oscuro: #212121;
     /* --primario: #FFC107; */
-    --primario: #FFC107;
+    --primario: #d60d35;
     /* --secundario: #0097A7; */
     --secundario: #EFD6E9;
     --gris: #757575;
@@ -30,7 +30,7 @@ body{
 }
 
 .contenedor{
-    max-width: 80rem;
+    max-width: 100rem;
     margin: 0 auto;
 }
 
@@ -46,12 +46,17 @@ body{
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    border: none;
 }
 
 @media (min-width: 768px) {
     .boton{
         width: auto;
     }
+}
+
+.boton:hover{
+    cursor: pointer;
 }
 
 .sombra{
@@ -84,6 +89,25 @@ h1,h2,h3{
 
 .titulo span{
     font-size: 2rem;
+}
+
+/* Utilidades */
+.w-sm-100{
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .w-sm-100{
+        width: auto;
+    }
+}
+
+.flex{
+    display: flex;
+
+}
+
+.alinear-derecha{
+    justify-content: flex-end;
 }
 
 /* Navegación principal */
@@ -161,6 +185,81 @@ h1,h2,h3{
         grid-template-rows: 200px 800px; */
         /* grid: 200px 800px / 300px 300px; */
         grid-template-columns: repeat(3, 1fr); /*1fr 1 fracción 33.3%*/
+
+        column-gap: 1rem;
     }
 }
 
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.servicio h3{
+    color: var(--cafe);
+    font-weight: normal;
+}
+
+.servicio p{
+    line-height: 2;
+    text-align: justify;
+}
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Contacto */
+.formulario{
+    background-color: var(--gris);
+    width: min( 60rem, 100% ); /*Utilizar el valor más pequeño*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--blanco);
+}
+
+.contenedor-campos{
+
+
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+
+}
