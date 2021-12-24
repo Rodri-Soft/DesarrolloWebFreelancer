@@ -153,8 +153,16 @@ h1,h2,h3{
 
 /* Hero */
 
-.hero{
+.webp .hero {
+    background-image: url(../img/fondo1.webp);
+}
+
+.no-webp .hero {
     background-image: url(../img/fondo1.jpg);
+}
+
+.hero{
+    /* background-image: url(../img/fondo1.webp); */
     background-repeat: no-repeat;
     background-size: cover;
     height: 420px;
